@@ -1,0 +1,30 @@
+{
+  "name": "jira-to-issues",
+  "version": "1.0.0",
+  "description": "Repo for migrating from Jira to GitHub issues",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "exec": "tsc && node lib/index.js",
+    "clean": "rm -r repo-state"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damccorm/jira-to-issues.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damccorm/jira-to-issues/issues"
+  },
+  "homepage": "https://github.com/damccorm/jira-to-issues#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.29",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@octokit/rest": "^18.12.0",
+    "csv-parse": "^5.0.4",
+    "typed-rest-client": "^1.8.6"
+  }
+}
